@@ -2,26 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.text-soft-red {
+  color: hsl(10, 79%, 65%);
+}
+
+.bg-soft-red {
+  background-color: hsl(10, 79%, 65%);
+}
+
+.text-cyan {
+  color: hsl(186, 34%, 60%);
+}
+
+.bg-cyan {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.text-dark-brown {
+  color: hsl(25, 47%, 15%);
+}
+
+.bg-dark-brown {
+  background-color: hsl(25, 47%, 15%);
+}
+
+.text-medium-brown {
+  color: hsl(28, 10%, 53%);
+}
+
+.bg-medium-brown {
+  background-color: hsl(28, 10%, 53%);
+}
+
+.text-cream {
+  color: hsl(27, 66%, 92%);
+}
+
+.bg-cream {
+  background-color: hsl(27, 66%, 92%);
+}
+
+.text-very-pale-orange {
+  color: hsl(33, 100%, 98%);
+}
+
+.bg-very-pale-orange {
+  background-color: hsl(33, 100%, 98%);
+}
+
+.stat-line {
+  transition: 0.2s;
+}
+
+.stat-line:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.price-block {
+  display: none;
+  transition: 0.2s;
+}
+
+li:hover .price-block {
+  display: initial;
 }
