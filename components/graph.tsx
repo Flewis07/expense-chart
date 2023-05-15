@@ -7,7 +7,7 @@ export default function Graph(props:any) {
 
     return(
         <div className='py-5'>
-            <ul className='flex justify-evenly md:justify-center h-72 sm:h-56'>
+            <ul className='flex justify-evenly md:justify-center h-72'>
                 {
                     data.map((day:any, index:any) => {
                         const percent = ((day.amount / total * 100 * 3).toFixed(0))
